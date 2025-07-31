@@ -59,19 +59,19 @@ export default function CreateContentPage() {
           setTokens("∞");
         } else {
           if (data.lastClaim !== today) {
-            await updateDoc(userRef, { tokens: 3, lastClaim: today });
-            setTokens(3);
+            await updateDoc(userRef, { tokens: 5, lastClaim: today });
+            setTokens(5);
           } else {
             setTokens(data.tokens);
           }
         }
       } else {
         await setDoc(userRef, {
-          tokens: 3,
+          tokens: 5,
           lastClaim: today,
           role: "FREE",
         });
-        setTokens(3);
+        setTokens(5);
       }
     });
 
