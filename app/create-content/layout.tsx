@@ -2,12 +2,12 @@
 
 import React, { ReactNode } from "react";
 import { Metadata } from "next";
-import "../globals.css"; // ถ้ามี global styles ให้ import ด้วย
+import "../globals.css";
 import Header from "@/components/header";
 
 export const metadata: Metadata = {
-  title: "Create Content",
-  description: "หน้าสร้างคอนเทนต์ของคุณ",
+  title: "AI content helper",
+  description: "AI content helper by นัก dev ฝึกหัด",
 };
 
 export default function CreateContentLayout({
